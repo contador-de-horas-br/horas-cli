@@ -1,0 +1,11 @@
+{
+  "name": "horas-cli",
+  "version": "1.0.0",
+  "description": "Somar, subtrair e converter horas (HH:MM:SS) na linha de comando, sem dependências.",
+  "main": "horas.js",
+  "bin": { "horas": "horas.js" },
+  "scripts": { "test": "node test.js" },
+  "keywords": ["horas", "calculadora", "timesheet", "banco de horas", "cli", "pt-br"],
+  "author": "Verse Media",
+  "license": "MIT"
+}

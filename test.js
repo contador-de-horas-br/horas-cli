@@ -1,0 +1,11 @@
+'use strict';
+const assert = require('node:assert');
+const h = require('./horas');
+assert.strictEqual(h.paraSegundos('01:00'), 3600);
+assert.strictEqual(h.formatar(h.somar(['07:45', '01:30', '00:50:20'])), '10:05:20');
+assert.strictEqual(h.formatar(h.diferenca('22:10', '05:40')), '07:30:00');
+assert.strictEqual(h.emDias(h.paraSegundos('72:00')), '3 dia(s) e 00:00:00');
+assert.strictEqual(h.emDias(h.paraSegundos('50:30')), '2 dia(s) e 02:30:00');
+assert.strictEqual(h.decimal(h.paraSegundos('07:45')), 7.75);
+assert.strictEqual(h.formatar(h.somar(['08:00', '-09:15'])), '-01:15:00');
+console.log('ok — todos os testes passaram');
